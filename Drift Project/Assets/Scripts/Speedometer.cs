@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Speedometer : MonoBehaviour
 {
      public GameObject needle;
 
@@ -11,17 +12,22 @@ public class NewBehaviourScript : MonoBehaviour
      private float desiredPosition;
 
      public float vehicleSpeed;
+
+     public Rigidbody vehicle;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    
+
+    private void FixedUpdate()
     {
-        
+        vehicleSpeed = vehicle.velocity.magnitude * 3.6f;
+        updateNeedle();
     }
+
     public void updateNeedle()
     {
         desiredPosition = startPosition - endPosition;
