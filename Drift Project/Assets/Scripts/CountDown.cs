@@ -10,6 +10,8 @@ public int countdownTime;
 
 public TMP_Text countDownDisplay;
 
+public TimerController timer;
+
 private void Start()
 {
     StartCoroutine(CountdownToStart());
@@ -27,6 +29,7 @@ IEnumerator CountdownToStart()
     }
 
     countDownDisplay.text = "GO";
+    timer.BeginTimer();
 
     
     yield return new WaitForSeconds(1f);
