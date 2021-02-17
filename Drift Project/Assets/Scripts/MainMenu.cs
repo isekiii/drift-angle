@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void GoToSettingsMenu()
     {
-        SceneManager.LoadScene("SettingsMenu");
+      //  SceneManager.LoadScene("SettingsMenu");
     }
 
     public void GoToMainMenu()
@@ -22,5 +22,6 @@ public class MainMenu : MonoBehaviour
     public void Quitgame()
     {
         Application.Quit();
+        Debug.Log("App closed -_-");
     }
 }
