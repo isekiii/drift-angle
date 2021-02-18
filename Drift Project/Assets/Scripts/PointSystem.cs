@@ -10,12 +10,12 @@ public class PointSystem : MonoBehaviour
 
     public Rigidbody car;
 
-    public float currentScore;
-    public float totalScore;
+    float currentScore;
+    float totalScore;
 
-    public bool isDrifting = false;
+    bool isDrifting = false;
 
-    public float driftAngle;
+    float driftAngle;
 
     public Speedometer speedometer;
 
@@ -26,17 +26,19 @@ public class PointSystem : MonoBehaviour
     {
        driftAngle = Vector3.Angle(car.velocity, car.transform.forward);
        
-        isDrifting = driftAngle > 15;
+        isDrifting = driftAngle > 15 && speedometer.vehicleSpeed > 10;
         
         UpdateScore();
         UpdateText();
+        
+        
     }
 
     void UpdateScore()
     {
         if (isDrifting)
         {
-            currentScore += driftAngle * speedometer.vehicleSpeed;
+            currentScore += driftAngle * speedometer.vehicleSpeed / 100;
         }
         else
         {
@@ -49,10 +51,10 @@ public class PointSystem : MonoBehaviour
     {
         if (currentScore > 0)
         {
-            currentText.text = currentScore.ToString();
+            currentText.text = currentScore.ToString("0");
         }
         else currentText.text = "";
 
-        totalText.text ="Total score: " +  totalScore.ToString();
+        totalText.text ="Total score: " +  totalScore.ToString("0");
     }
 }
