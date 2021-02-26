@@ -51,6 +51,12 @@ public class SettingsMenu : MonoBehaviour
        
     }
 
+    public void SetCarVolume(float volume)
+    {
+        audioMixer.SetFloat("carVolume", volume);
+    }
+    
+
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
