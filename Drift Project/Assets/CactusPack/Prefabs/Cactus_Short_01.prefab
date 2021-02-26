@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6400000}
+  - component: {fileID: 1391083002891717364}
   m_Layer: 0
   m_Name: Cactus_Short_01
   m_TagString: Untagged
@@ -96,3 +97,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: ba2ad16784e1bf345bd347541176af0e, type: 3}
+--- !u!136 &1391083002891717364
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2706335
+  m_Height: 0.743045
+  m_Direction: 1
+  m_Center: {x: -0.057386003, y: 0.3710435, z: -0.0315805}
