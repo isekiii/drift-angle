@@ -8,7 +8,7 @@ public class Escape : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.F2))
         {
             SceneManager.LoadScene(0);
         }
