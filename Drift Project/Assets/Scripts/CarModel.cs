@@ -6,9 +6,10 @@ public class CarModel : MonoBehaviour
 {
     [SerializeField] private GameObject[] carModels;
 
+
     private void Awake()
     {
-        ChooseCarModel(SaveManager.instance.currentCar);
+        ChooseCarModel(CarSelection.CarID);
     }
 
     private void ChooseCarModel(int index)
