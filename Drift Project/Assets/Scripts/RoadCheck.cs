@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class RoadCheck : MonoBehaviour
 {
-    public GameObject car;
+    public GameObject[] wheels;
     public bool isOnRoad;
 
     private RaycastHit hit;
@@ -17,7 +17,10 @@ public class RoadCheck : MonoBehaviour
     {
         isOnRoad = Physics.Raycast(transform.position, transform.up * -1, chkDst, groundLayer);
         Debug.DrawRay(transform.position,transform.up * -1 * chkDst, Color.red);
+        
+        
     }
-    
-    
+
+
+
 }

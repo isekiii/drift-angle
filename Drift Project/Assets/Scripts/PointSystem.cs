@@ -9,6 +9,7 @@ public class PointSystem : MonoBehaviour
 
 
     public Rigidbody car;
+    public RoadTrigger roadTrigger;
 
     float currentScore;
     float totalScore;
@@ -26,7 +27,7 @@ public class PointSystem : MonoBehaviour
     {
        driftAngle = Vector3.Angle(car.velocity, car.transform.forward);
        
-        isDrifting = driftAngle > 15 && speedometer.vehicleSpeed > 10;
+        isDrifting = driftAngle > 15 && speedometer.vehicleSpeed > 10 && roadTrigger.onRoad;
         
         UpdateScore();
         UpdateText();

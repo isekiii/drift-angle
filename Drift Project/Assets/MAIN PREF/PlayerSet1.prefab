@@ -1139,6 +1139,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ed12a7c686cf5a4088c0fd886b3309f, type: 3}
+--- !u!114 &6434899063791294984 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 903915605098659373, guid: 8ed12a7c686cf5a4088c0fd886b3309f, type: 3}
+  m_PrefabInstance: {fileID: 6180628565010179109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ed5d078524bf6408b95ca1fad3cf99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &3707192637688365852 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 7400708179833366329, guid: 8ed12a7c686cf5a4088c0fd886b3309f, type: 3}
@@ -1234,6 +1245,10 @@ PrefabInstance:
       propertyPath: currentText
       value: 
       objectReference: {fileID: 3444106835666077002}
+    - target: {fileID: 6134969863220451024, guid: 6179159782af4eb4983050dae47db37a, type: 3}
+      propertyPath: roadTrigger
+      value: 
+      objectReference: {fileID: 6434899063791294984}
     - target: {fileID: 6134969863220451025, guid: 6179159782af4eb4983050dae47db37a, type: 3}
       propertyPath: timeCounter
       value: 
