@@ -3205,7 +3205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c243d866a56b777428c3cf1ff9fb1ea1, type: 3}
+  m_Texture: {fileID: 2800000, guid: b588f8336405cf24593fac33d63a5c7a, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3641,7 +3641,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Map1
+  m_Text: Forest
 --- !u!222 &850885290
 CanvasRenderer:
   m_ObjectHideFlags: 0

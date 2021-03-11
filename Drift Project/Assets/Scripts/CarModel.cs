@@ -14,6 +14,6 @@ public class CarModel : MonoBehaviour
 
     private void ChooseCarModel(int index)
     {
-        Instantiate(carModels[index], transform.position, Quaternion.identity, transform);
+        Instantiate(carModels[index], transform.position, transform.rotation);
     }
 }
